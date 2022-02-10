@@ -1,8 +1,49 @@
 /* stylelint-disable prettier/prettier */
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Bebas+Neue&display=swap');
 
 body {
   min-height: 100vh;
   background-color: skyblue;
+  font-family: 'Barlow', sans-serif;
+
+  margin: 0;
+  height: 100vh;
+  background-color: rgba(37, 37, 37);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-container {
+  border: 2px solid black;
+  padding: 10px;
+  border-radius: 7px;
+  box-shadow: inset 0 8px 3px -5px rgba(255 ,255 ,255, 0.3);
+}
+
+.button-container button {
+  cursor: pointer;
+  height: 75px;
+  width: 120px;
+  border-radius: 7px;
+  border: 2px solid black;
+  outline: none;
+  font-family: 'Barlow', sans-serif;
+  font-size: 25px;
+  background: linear-gradient(to bottom, #575757, #676767);
+  color: #ffffff;
+  text-shadow: 0 2px 5px black;
+  box-shadow: inset 0 8px 5px -6px rgba(255 ,255 ,255, 0.3), 0 9px 8px -5px rgb(0,0,0)
+}
+
+.button-container button:active {
+  transform: translateY(2px);
+  box-shadow: inset 0 10px 5px -5px rgb(255 255 255 / 30%), 0 3px 5px -5px rgb(0,0,0)
+  
+}
+
+.button-container button:hover {
+  background: linear-gradient(to top, #575757, #676767);
 }
 
 *,
@@ -11,54 +52,4 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-a {
-  text-decoration: none;
-  color: inherit;
-  cursor: pointer;
-}
-button {
-  background-color: transparent;
-  color: inherit;
-  border-width: 0;
-  padding: 0;
-  cursor: pointer;
-}
-figure {
-  margin: 0;
-}
-input::-moz-focus-inner {
-  border: 0;
-  padding: 0;
-  margin: 0;
-}
-input {
-  outline: none;
-  border: 0;
-}
-ul,
-ol,
-dd {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
-}
-p {
-  margin: 0;
-}
-cite {
-  font-style: normal;
-}
-fieldset {
-  border-width: 0;
-  padding: 0;
-  margin: 0;
 }
